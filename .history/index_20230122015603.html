@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Montserrat:wght@650&family=Teko&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Montserrat:wght@500&family=Teko&display=swap');
+        body {
+            background-image: url(workshop.png);
+            /* background-size: 100vw 100vh; */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 20px;
+
+        }
+
+        .miditem {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #midlst {
+            display: flex;
+            list-style: none;
+
+        }
+
+        .midlin {
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+            font-size: x-large;
+        }
+
+        .midlin:hover {
+            color: rgb(102, 198, 231);
+        }
+
+        #leftnav {
+            margin-left: 50px;
+            
+        }
+
+        #rightnav {
+            margin-right: 50px;
+            font-size: x-large;
+            background: transparent;
+            border-radius: 30px;
+            padding: 10px;
+            border-color: white;
+            color: white;
+            border-style: solid;
+        }
+
+        #rightnav:hover {
+            background-color: rgb(53, 59, 68);
+            border-color: white;
+            color: white;
+            border-style: solid;
+            cursor: pointer;
+
+        }
+
+        #content {
+            width: 40%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            margin-left: 100px;
+        }
+
+        #hed{
+            color: white;
+            font-family:Montserrat ;
+            font-size: 60px;
+            font-weight: 650;
+            margin-bottom: 3px;
+        }
+
+        #inner_para{
+            color: white;
+            font-family:Montserrat ;
+            font-size: 18px;
+            margin-top: 2px;
+        }
+        #last_button{
+            background-color: rgb(97, 193, 245);
+            border: none;
+            border-radius: 20px;
+            padding: 5px 8px 5px 8px;
+        }
+
+        #last_button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="leftnav">
+            <img src="sticker.png" alt="logo" width="80px" height="80px">
+        </div>
+        <div id="middle_containor">
+            <ul id="midlst">
+                <li class="miditem"> <a class="midlin" href="#"> Home</a></li>
+                <li class="miditem"> <a class="midlin" href="#"> News</a></li>
+                <li class="miditem"> <a class="midlin" href="#"> Events</a></li>
+                <li class="miditem"> <a class="midlin" href="#"> Blog</a></li>
+                <li class="miditem"> <a class="midlin" href="#"> About</a></li>
+            </ul>
+        </div>
+        <button id="rightnav">Contact US</button>
+    </nav>
+    <div id="content">
+        <div id="contentin">
+            <p id="hed"> SUPER COOL TITLE</p>
+            <P id="inner_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ratione quam quas
+                obcaecati iure labore pariatur ad atque, minima doloribus vel quod perspiciatis a voluptate blanditiis
+                aperiam at ipsam hic. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus labore deserunt
+                incidunt sit in molestiae, eveniet sunt explicabo fuga, provident, obcaecati blanditiis saepe ad
+                distinctio dignissimos. Eos similique dolorem cumque.</P>
+            <button id="last_button">
+                <img src="down-chevron.png" alt="drop_down" height="15px" width="15px">
+                Discover more
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
